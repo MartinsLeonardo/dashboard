@@ -1,22 +1,30 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Bem Vindo ao Dashboard!
-  </h1>
-<div>
-  <Button type="button" class="btn btn-primary">
-    Operacional
-  </Button>
+<link rel="stylesheet" href="../assets/css/style.css">
+
+<div class="container">
+    <div class="login">
+        <form name="formLogin">
+          <h1><span class="fa fa-paper-plane"></span> Menu Dashboard </h1>
+          <div class="row" style="text-align: center">
+              <Button style="width: 100%" type="button" class="btn btn-primary" ng-click="login(usuario)">
+                Operacional
+              </Button>
+          </div>
+          <br/>
+          <div class="row" style="text-align: center">
+              <Button style="width: 100%" type="button" class="btn btn-danger" ng-click="login(usuario)">
+                Analítico
+              </Button>
+          </div>
+          <br/>
+          <div class="row" style="text-align: center">
+              <Button style="width: 100%" type="button" class="btn btn-info" ng-click="login(usuario)">
+                Estratégico
+              </Button>
+          </div>
+        </form>
+    </div>
 </div>
-<div>
-  <Button type="button" class="btn btn-danger">
-    Analítico
-  </Button>
-</div>
-<div>
-  <Button type="button" class="btn btn-info">
-    Estratégico
-  </Button>
-</div>
-  
+
 
