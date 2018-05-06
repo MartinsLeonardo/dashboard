@@ -12,6 +12,7 @@ const appRoutes: Routes = [
   {path: 'operacional', component: OperacionalComponent},
   {path: 'analitico', component: AnaliticoComponent},
   {path: 'estrategico', component: EstrategicoComponent},
+  {path:'menu',component: MenuComponent},
   {path: '', component: MenuComponent},
   {path: '**', component: MenuComponent}
 ];

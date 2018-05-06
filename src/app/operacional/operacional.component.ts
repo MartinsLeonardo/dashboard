@@ -11,5 +11,5 @@ export class OperacionalComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
 }
