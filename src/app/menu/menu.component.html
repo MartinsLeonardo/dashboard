@@ -6,21 +6,29 @@
           <form name="formLogin">
             <h1><span class="fa fa-paper-plane"></span> Menu Dashboard </h1>
             <div class="row" style="text-align: center">
-                <Button style="width: 100%" type="button" class="btn btn-primary" ng-click="login(usuario)">
+              <a routerLink="/operacional" style="width: 100%">
+                <Button style="width: 100%" type="button" class="btn btn-primary">
                   Operacional
                 </Button>
+              </a>
             </div>
             <br/>
+            
             <div class="row" style="text-align: center">
-                <Button style="width: 100%" type="button" class="btn btn-danger" ng-click="login(usuario)">
+            <a routerLink="/analitico" style="width: 100%">
+                <Button style="width: 100%" type="button" class="btn btn-danger">
                   Analítico
                 </Button>
+            </a>
             </div>
+            
             <br/>
             <div class="row" style="text-align: center">
-                <Button style="width: 100%" type="button" class="btn btn-info" ng-click="login(usuario)">
+                <a routerLink="/estrategico" style="width: 100%">
+                <Button style="width: 100%" type="button" class="btn btn-info">
                   Estratégico
                 </Button>
+                </a>
             </div>
           </form>
       </div>
