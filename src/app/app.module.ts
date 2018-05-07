@@ -2,6 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+
+import * as FusionCharts from 'fusioncharts';
+import * as Charts from 'fusioncharts/fusioncharts.charts';
+import * as FintTheme from 'fusioncharts/themes/fusioncharts.theme.fint';
+import { FusionChartsModule } from 'angular4-fusioncharts';
+
+
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { OperacionalComponent } from './operacional/operacional.component';
@@ -30,7 +37,8 @@ const appRoutes: Routes = [
       appRoutes,
       {enableTracing: true} 
     ),
-    BrowserModule
+    BrowserModule,
+    FusionChartsModule.forRoot(FusionCharts, Charts, FintTheme)
   ],
   providers: [],
   bootstrap: [AppComponent]
