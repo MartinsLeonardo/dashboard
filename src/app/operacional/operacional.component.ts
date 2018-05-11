@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalendarModule } from 'primeng/calendar';
 
 @Component({
   selector: 'app-operacional',
@@ -11,8 +12,14 @@ export class OperacionalComponent implements OnInit {
   type = 'column2d';
   dataFormat = 'json';
   dataSource;
+  estado = 'TO';
+
+  ngOnInit() {
+   
+  }
 
   constructor() { 
+    
     this.dataSource = {
       "chart": {
           "caption": "Harry's SuperMart",
@@ -43,6 +50,5 @@ export class OperacionalComponent implements OnInit {
       ]
     }
   }
-  ngOnInit() {
-  }
+  
 }

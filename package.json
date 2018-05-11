@@ -27,6 +27,7 @@
     "fusioncharts": "^3.12.2",
     "jquery-fusioncharts": "^1.0.5",
     "popper.js": "^1.14.3",
+    "primeng": "^5.2.6",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },

@@ -8,6 +8,7 @@ import * as Charts from 'fusioncharts/fusioncharts.charts';
 import * as FintTheme from 'fusioncharts/themes/fusioncharts.theme.fint';
 import { FusionChartsModule } from 'angular4-fusioncharts';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -38,7 +39,9 @@ const appRoutes: Routes = [
       {enableTracing: true} 
     ),
     BrowserModule,
-    FusionChartsModule.forRoot(FusionCharts, Charts, FintTheme)
+    FusionChartsModule.forRoot(FusionCharts, Charts, FintTheme),
+    BrowserAnimationsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

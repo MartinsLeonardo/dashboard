@@ -2,7 +2,7 @@
   <a routerLink="/menu" style="width: 100%">Home</a>
   <h1><span class="fa fa-object-group"></span> Dashboard Analítico </h1>
 </div>
-
+<br/>
 <div class="container">
   <div class="row">
     <select class="custom-select" id="temporada" style="width:25%">
@@ -11,11 +11,21 @@
       <option value="2">Baixa Temporada</option>
     </select>
     
-    <input type="search" class="form-control ds-input" id="search-input" placeholder="Destino Turístico..." autocomplete="off" data-siteurl="https://getbootstrap.com" data-docs-version="4.1" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="width: 30%">
+    <input type="search" class="form-control ds-input" id="search-input" placeholder="Estabelecimento..." autocomplete="off" data-siteurl="https://getbootstrap.com" data-docs-version="4.1" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="width: 30%">
     
-    Calendário
+    DataInicial e DataFinal
   </div>
 </div>
+<br/>
+<div class="container">
+  <div class="row">
+    <select class="custom-select" id="avaliador" style="width:25%">
+      <option selected>Confiável</option>
+      <option value="1">Todas as Avaliações</option>
+    </select>
+  </div>
+</div>
+
 <fusioncharts
     [width]="width"
     [height]="height"
