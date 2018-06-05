@@ -2,34 +2,170 @@
   <a routerLink="/menu" style="width: 100%">Home</a>
   <h1><span class="fa fa-object-group"></span> Dashboard Analítico </h1>
 </div>
-<br/>
-<div class="container">
-  <div class="row">
-    <select class="custom-select" id="temporada" style="width:25%">
-      <option selected>Atemporal</option>
-      <option value="1">Alta Temporada</option>
-      <option value="2">Baixa Temporada</option>
-    </select>
-    
-    <input type="search" class="form-control ds-input" id="search-input" placeholder="Estabelecimento..." autocomplete="off" data-siteurl="https://getbootstrap.com" data-docs-version="4.1" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="width: 30%">
-    
-    DataInicial e DataFinal
-  </div>
-</div>
-<br/>
-<div class="container">
-  <div class="row">
-    <select class="custom-select" id="avaliador" style="width:25%">
-      <option selected>Confiável</option>
-      <option value="1">Todas as Avaliações</option>
-    </select>
-  </div>
-</div>
 
-<fusioncharts
-    [width]="width"
-    [height]="height"
-    [type]="type"
-    [dataFormat]="dataFormat"
-    [dataSource]="dataSource"
-></fusioncharts>
+<br/>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h5>Temporada</h5>
+      <select class="custom-select" id="temporada" style="width:100%">
+        <option selected>Indiferente</option>
+        <option value="1">Alta Temporada</option>
+        <option value="2">Baixa Temporada</option>
+      </select>
+    </div>
+    <div class="col">
+      <h5>Meu Estabelecimento</h5>  
+      <input type="search" class="form-control ds-input" id="search-input" placeholder="Pesquisar..." autocomplete="off" data-siteurl="https://getbootstrap.com" data-docs-version="4.1" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="width: 100%">
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class = "col">
+          <h5>Data Inicial</h5>
+          <!--Inserir input-->
+        </div>
+        <div class = "col">
+          <h5>Data Final</h5>
+          <!--Inserir input-->
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+        <h5>Nível Avaliador</h5>
+        <select class="custom-select" id="temporada" style="width:100%">
+          <option selected>Confiável</option>
+          <option value="1">Indiferente</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <br/><br/>
+
+  <div class="row">
+    <div class="col">
+      <h5>Quantidade</h5>
+      <!-- Gráfico de Pizza -->
+    </div>
+    <div class="col">
+      <h5>Quantidade Distribuída</h5>
+      <div class="row">
+        <div class = "col">
+          <!-- Número -->
+        </div>
+        <div class = "col">
+          <!-- 5 Estrelas -->5
+        </div>
+      </div>
+
+      <div class="row">
+        <div class = "col">
+          <!-- Número -->
+        </div>
+        <div class = "col">
+          <!-- 4 Estrelas -->4
+        </div>
+      </div>
+
+      <div class="row">
+        <div class = "col">
+          <!-- Número -->
+        </div>
+        <div class = "col">
+          <!-- 3 Estrelas -->3
+        </div>
+      </div>
+
+      <div class="row">
+        <div class = "col">
+          <!-- Número -->
+        </div>
+        <div class = "col">
+          <!-- 2 Estrelas -->2
+        </div>
+      </div>
+
+      <div class="row">
+        <div class = "col">
+          <!-- Número -->
+        </div>
+        <div class = "col">
+          <!-- 1 Estrelas -->1
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h5>Avaliação Média 3 Meses</h5>
+      <!-- Gráfico de Linha -->
+    </div>
+  </div>
+  <br/><br/>
+
+  <div class="row">
+      <div class="col">
+        <h5>Avaliações Boas</h5>
+        <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>  
+      <div class="col">
+        <h5>Avaliações Ruins</h5>
+        <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+</div>
