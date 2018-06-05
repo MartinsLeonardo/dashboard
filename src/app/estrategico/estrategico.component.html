@@ -3,23 +3,118 @@
   <h1><span class="fa fa-building"></span> Dashboard Estratégico </h1>
 </div>
 
+<br/>
 <div class="container">
   <div class="row">
-    <select class="custom-select" id="temporada" style="width:25%">
-      <option selected>Atemporal</option>
-      <option value="1">Alta Temporada</option>
-      <option value="2">Baixa Temporada</option>
-    </select>
-    
-    <input type="search" class="form-control ds-input" id="search-input" placeholder="Destino Turístico..." autocomplete="off" data-siteurl="https://getbootstrap.com" data-docs-version="4.1" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="width: 30%">
-    
-    Calendário
+    <div class="col">
+      <h5>Meu Estabelecimento</h5>
+      <input type="search" class="form-control ds-input" id="search-input" placeholder="Pesquisar..." autocomplete="off" data-siteurl="https://getbootstrap.com" data-docs-version="4.1" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="width: 100%">
+    </div>
+    <div class="col">
+      <h5>Concorrente Direto</h5>  
+      <input type="search" class="form-control ds-input" id="search-input" placeholder="Pesquisar..." autocomplete="off" data-siteurl="https://getbootstrap.com" data-docs-version="4.1" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="width: 100%">
+    </div>
   </div>
+  <br/><br/>
+
+  <div class="row">
+    <div class="col">
+      <h5>Avaliação Média</h5>
+      <!-- Inserir Gráfico de Linha -->
+    </div>
+    <div class="col">
+      <h5>Minha Empresa X Concorrente Direto</h5>
+      <!-- Inserir Gráfico comparação -->
+      <br/>
+      <h5>Minha Empresa X Melhor Avaliado</h5>
+      <!-- Inserir Gráfico comparação -->
+    </div>
+    <div class="col">
+      <h5>Avaliação de Concorrentes</h5>
+      <!-- Inserir Gráfico de Barras -->
+    </div>
+  </div>
+  <br/><br/>
+
+  <div class="row">
+    <div class="col">
+      <h5>Quantidade de Avaliadores</h5>
+      <!-- Inserir Caixa com Número -->
+    </div>  
+    <div class="col">
+      <h5>Quantidade Média de Avaliadores</h5>
+      <!-- Inserir Caixa com Número -->
+    </div>
+  </div>
+  <br/><br/>
+
+  <div class="row">
+    <div class="col">
+      <h5>Avaliações Boas</h5>
+      <table class="table table-striped table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>  
+    <div class="col">
+      <h5>Avaliações Ruins</h5>
+      <table class="table table-striped table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+
 </div>
-<fusioncharts
-    [width]="width"
-    [height]="height"
-    [type]="type"
-    [dataFormat]="dataFormat"
-    [dataSource]="dataSource"
-></fusioncharts>
