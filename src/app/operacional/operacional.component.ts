@@ -18,6 +18,10 @@ export class OperacionalComponent implements OnInit {
    
   }
 
+  alteraEstado(estado: string){
+    this.estado = estado;
+  }
+  
   constructor() { 
     
     this.dataSource = {
