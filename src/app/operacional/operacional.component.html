@@ -1,12 +1,14 @@
 <div class="container">
-  <a routerLink="/menu" style="width: 100%">Home</a>
-  <h1><span class="fa fa-cogs"></span> Dashboard Operacional </h1>
+  <a routerLink="/menu" class="badge badge-primary">Home</a>
+  
+  <h1><span class="badge badge-pill badge-primary"><span class="fa fa-cogs"></span> Dashboard Operacional</span></h1>
 </div>
+
 <br/>
 <div class="container">
   <div class="row">
     <div class="col">
-      <h5>Temporada</h5>
+      <h5 class="badge badge-dark">Temporada</h5>
       <select class="custom-select" id="temporada" style="width:100%">
         <option selected>Indiferente</option>
         <option value="1">Alta Temporada</option>
@@ -14,11 +16,11 @@
       </select>
     </div>
     <div class="col">
-      <h5>Destino Turístico</h5>  
+      <h5 class="badge badge-dark">Destino Turístico</h5>  
       <input type="search" class="form-control ds-input" id="search-input" placeholder="Pesquisar..." autocomplete="off" data-siteurl="https://getbootstrap.com" data-docs-version="4.1" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="width: 100%">
     </div>
     <div class="col">
-      <h5>Calendário</h5>
+      <h5 class="badge badge-dark">Calendário</h5>
       <!--Inserir Calendário-->
     </div>
   </div>
@@ -26,12 +28,12 @@
 
   <div class="row">
     <div class="col">
-      <h5>Hotéis Mais Bem Avaliados</h5>
+      <h5 class="badge badge-dark">Hotéis Mais Bem Avaliados</h5>
       <!-- Inserir Barchart -->
       <fusioncharts [width]="width" [height]="height" [type]="type" [dataFormat]="dataFormat" [dataSource]="dataSource"></fusioncharts>
     </div>
     <div class="col">
-      <h5>Climograma</h5>
+      <h5 class="badge badge-dark">Climograma</h5>
       <!-- NGIF -->
       <div *ngIf="estado == 'AC'">
         <h6>Acre</h6>
@@ -148,7 +150,7 @@
 
   <div class="row">
     <div class="col">
-      <h5>Produtos Turísticos</h5>
+      <h5 class="badge badge-dark">Produtos Turísticos</h5>
       <table class="table table-striped table-dark">
         <thead>
           <tr>
@@ -181,7 +183,7 @@
       </table>
     </div>  
     <div class="col">
-      <h5>Tipos de Turísmo</h5>
+      <h5 class="badge badge-dark">Tipos de Turísmo</h5>
       <!--Inserir Select Box-->
     </div>
   </div>

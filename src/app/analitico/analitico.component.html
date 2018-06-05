@@ -1,13 +1,14 @@
 <div class="container">
-  <a routerLink="/menu" style="width: 100%">Home</a>
-  <h1><span class="fa fa-object-group"></span> Dashboard Analítico </h1>
+  <a routerLink="/menu" class="badge badge-danger">Home</a>
+  
+  <h1><span class="badge badge-pill badge-danger"><span class="fa fa-chart-area"></span> Dashboard Analítico</span></h1>
 </div>
 
 <br/>
 <div class="container">
   <div class="row">
     <div class="col">
-      <h5>Temporada</h5>
+      <h5 class="badge badge-dark">Temporada</h5>
       <select class="custom-select" id="temporada" style="width:100%">
         <option selected>Indiferente</option>
         <option value="1">Alta Temporada</option>
@@ -15,23 +16,23 @@
       </select>
     </div>
     <div class="col">
-      <h5>Meu Estabelecimento</h5>  
+      <h5 class="badge badge-dark">Meu Estabelecimento</h5>  
       <input type="search" class="form-control ds-input" id="search-input" placeholder="Pesquisar..." autocomplete="off" data-siteurl="https://getbootstrap.com" data-docs-version="4.1" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="width: 100%">
     </div>
     <div class="col">
       <div class="row">
         <div class = "col">
-          <h5>Data Inicial</h5>
+          <h5 class="badge badge-dark">Data Inicial</h5>
           <!--Inserir input-->
         </div>
         <div class = "col">
-          <h5>Data Final</h5>
+          <h5 class="badge badge-dark">Data Final</h5>
           <!--Inserir input-->
         </div>
       </div>
       <br/>
       <div class="row">
-        <h5>Nível Avaliador</h5>
+        <h5 class="badge badge-dark">Nível Avaliador</h5>
         <select class="custom-select" id="temporada" style="width:100%">
           <option selected>Confiável</option>
           <option value="1">Indiferente</option>
@@ -43,11 +44,11 @@
 
   <div class="row">
     <div class="col">
-      <h5>Quantidade</h5>
+      <h5 class="badge badge-dark">Quantidade</h5>
       <!-- Gráfico de Pizza -->
     </div>
     <div class="col">
-      <h5>Quantidade Distribuída</h5>
+      <h5 class="badge badge-dark">Quantidade Distribuída</h5>
       <div class="row">
         <div class = "col">
           <!-- Número -->
@@ -94,7 +95,7 @@
       </div>
     </div>
     <div class="col">
-      <h5>Avaliação Média 3 Meses</h5>
+      <h5 class="badge badge-dark">Avaliação Média 3 Meses</h5>
       <!-- Gráfico de Linha -->
     </div>
   </div>
@@ -102,7 +103,7 @@
 
   <div class="row">
       <div class="col">
-        <h5>Avaliações Boas</h5>
+        <h5 class="badge badge-dark">Avaliações Boas</h5>
         <table class="table table-striped table-dark">
             <thead>
               <tr>
@@ -135,7 +136,7 @@
           </table>
       </div>  
       <div class="col">
-        <h5>Avaliações Ruins</h5>
+        <h5 class="badge badge-dark">Avaliações Ruins</h5>
         <table class="table table-striped table-dark">
             <thead>
               <tr>
