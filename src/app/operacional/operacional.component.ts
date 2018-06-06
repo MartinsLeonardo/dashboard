@@ -9,7 +9,7 @@ import { CalendarModule } from 'primeng/calendar';
 export class OperacionalComponent implements OnInit {
   width = 600;
   height = 400;
-  type = 'column2d';
+  type = 'bar2D';
   dataFormat = 'json';
   dataSource;
   estado = 'TO';
@@ -23,7 +23,7 @@ export class OperacionalComponent implements OnInit {
   }
   
   constructor() { 
-    
+
     this.dataSource = {
       "chart": {
           "caption": "Harry's SuperMart",

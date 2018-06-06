@@ -19,84 +19,106 @@
       <h5 class="badge badge-dark">Meu Estabelecimento</h5>  
       <input type="search" class="form-control ds-input" id="search-input" placeholder="Pesquisar..." autocomplete="off" data-siteurl="https://getbootstrap.com" data-docs-version="4.1" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="width: 100%">
     </div>
+
     <div class="col">
-      <div class="row">
-        <div class = "col">
-          <h5 class="badge badge-dark">Data Inicial</h5>
-          <!--Inserir input-->
-        </div>
-        <div class = "col">
-          <h5 class="badge badge-dark">Data Final</h5>
-          <!--Inserir input-->
-        </div>
-      </div>
-      <br/>
-      <div class="row">
-        <h5 class="badge badge-dark">Nível Avaliador</h5>
-        <select class="custom-select" id="temporada" style="width:100%">
-          <option selected>Confiável</option>
-          <option value="1">Indiferente</option>
-        </select>
-      </div>
+      <h5 class="badge badge-dark">Nível Avaliador</h5>
+      <select class="custom-select" id="temporada" style="width:100%">
+        <option selected>Confiável</option>
+        <option value="1">Indiferente</option>
+      </select>
     </div>
   </div>
   <br/><br/>
 
   <div class="row">
+    <div class = "col">
+      <h5 class="badge badge-dark">Data Inicial</h5><br/>
+      <input type="date" name="data-inicial" value="data-inicial" style="width:50%">
+    </div>
+    <div class = "col">
+      <h5 class="badge badge-dark">Data Final</h5><br/>
+      <input type="date" name="data-final" value="data-final" style="width:50%">
+    </div>
+  </div>
+<br/><br/>
+
+  <div class="row">
     <div class="col">
       <h5 class="badge badge-dark">Quantidade</h5>
       <!-- Gráfico de Pizza -->
+      <fusioncharts [width]="width" [height]="height" [type]="type2" [dataFormat]="dataFormat2" [dataSource]="dataSource2"></fusioncharts>
     </div>
     <div class="col">
       <h5 class="badge badge-dark">Quantidade Distribuída</h5>
+      <br/>
       <div class="row">
         <div class = "col">
-          <!-- Número -->
+          <!-- Número 5-->
         </div>
         <div class = "col">
-          <!-- 5 Estrelas -->5
+          <div class= "row">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
         </div>
       </div>
-
+      <br/>
       <div class="row">
         <div class = "col">
-          <!-- Número -->
+          <!-- Número 4-->
         </div>
         <div class = "col">
-          <!-- 4 Estrelas -->4
+          <div class= "row">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
         </div>
       </div>
-
+      <br/>
       <div class="row">
         <div class = "col">
-          <!-- Número -->
+          <!-- Número 3-->
         </div>
         <div class = "col">
-          <!-- 3 Estrelas -->3
+          <div class= "row">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
         </div>
       </div>
-
+      <br/>
       <div class="row">
         <div class = "col">
-          <!-- Número -->
+          <!-- Número 2-->
         </div>
         <div class = "col">
-          <!-- 2 Estrelas -->2
+          <div class= "row">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
         </div>
       </div>
-
+      <br/>
       <div class="row">
         <div class = "col">
-          <!-- Número -->
+          <!-- Número 1-->
         </div>
         <div class = "col">
-          <!-- 1 Estrelas -->1
+          <div class= "row">
+              <i class="far fa-star"></i>
+          </div>
         </div>
       </div>
     </div>
     <div class="col">
       <h5 class="badge badge-dark">Avaliação Média 3 Meses</h5>
-      <!-- Gráfico de Linha -->
+      <fusioncharts [width]="width" [height]="height" [type]="type" [dataFormat]="dataFormat" [dataSource]="dataSource"></fusioncharts>
     </div>
   </div>
   <br/><br/>

@@ -65,7 +65,6 @@
   <div class="row">
     <div class="col">
       <h5 class="badge badge-dark">Hotéis Mais Bem Avaliados</h5>
-      <!-- Inserir Barchart -->
       <fusioncharts [width]="width" [height]="height" [type]="type" [dataFormat]="dataFormat" [dataSource]="dataSource"></fusioncharts>
     </div>
     <div class="col">
@@ -220,7 +219,14 @@
     </div>  
     <div class="col">
       <h5 class="badge badge-dark">Tipos de Turísmo</h5>
-      <!--Inserir Select Box-->
+      <form>
+        <input type="checkbox" name="tipotur1" value="Ecoturismo">Ecoturismo <br/>  
+        <input type="checkbox" name="tipotur2" value="Cultural">Cultural <br/>
+        <input type="checkbox" name="tipotur3" value="Aventura">Aventura <br/>
+        <input type="checkbox" name="tipotur4" value="Praias">Praias <br/>
+        <input type="checkbox" name="tipotur5" value="Negócios">Negócios <br/>
+        <input type="checkbox" name="tipotur6" value="Rural">Rural
+      </form>
     </div>
   </div>
 </div>
