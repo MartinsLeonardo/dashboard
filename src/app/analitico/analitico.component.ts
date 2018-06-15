@@ -18,10 +18,7 @@ export class AnaliticoComponent implements OnInit {
 
     this.dataSource2={
 
-      "chart": {
-        "caption": "Web Servers Market Share",
-        "subCaption": "2015-16",
-         "plottooltext": "<div id='nameDiv'> <b>$label</b><br/><b>Market Share Percentage : </b>$percentValue<br/></div>",
+      "chart": { 
         "showLegend": "1",   
         "legendPosition":"right",
         "startingAngle":"300",
@@ -30,27 +27,18 @@ export class AnaliticoComponent implements OnInit {
        "theme":"hulk-light",
       },
       "data": [{
-        "label": "Apache",
-        "value": "32647479"
+        "label": "Boa",
+        "value": "38"
       }, {
-        "label": "Microsoft",
-        "value": "22100932"
-      }, {
-        "label": "Zeus",
-        "value": "14376"
-      }, {
-        "label": "Other",
-        "value": "18674221"
+        "label": "Ruim",
+        "value": "18"
       }]
     }
 
 
     this.dataSource ={
       "chart": {
-          "caption": "Stock Price",
-          "subcaption": "Last month",
-          "numberPrefix": "$",
-          "canvasleftmargin": "145",
+          "canvasleftmargin": "10",
           "chartTopMargin": "10",
           "chartRightMargin": "10",
           "showBorder": "0"
@@ -60,13 +48,13 @@ export class AnaliticoComponent implements OnInit {
               "data": [
                 {
                   "label": "Mês 1",
-                  "value": "89.45"
+                  "value": "89"
                 }, {
                   "label": "Mês 2",
-                  "value": "15.87"
+                  "value": "15"
                 }, {
                   "label": "Mês 3",
-                  "value": "89.64"
+                  "value": "70"
                 }
               ]
           }

@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EstrategicoComponent implements OnInit {
   
-  avaliadores = 50;
-  mediaAvaliadores = 150;
+  avaliadores = 150;
+  mediaAvaliadores = 120;
 
 
   type = 'column2d';
@@ -31,8 +31,7 @@ export class EstrategicoComponent implements OnInit {
 
     this.dataSource3={
       "chart": {
-        "caption": "Web Servers Market Share",
-        "subCaption": "2015-16",
+       
          "plottooltext": "<div id='nameDiv'> <b>$label</b><br/><b>Market Share Percentage : </b>$percentValue<br/></div>",
         "showLegend": "1",   
         "legendPosition":"right",
@@ -42,24 +41,17 @@ export class EstrategicoComponent implements OnInit {
        "theme":"hulk-light",
       },
       "data": [{
-        "label": "Apache",
-        "value": "32647479"
+        "label": "Eu",
+        "value": "6"
       }, {
-        "label": "Microsoft",
-        "value": "22100932"
-      }, {
-        "label": "Zeus",
-        "value": "14376"
-      }, {
-        "label": "Other",
-        "value": "18674221"
+        "label": "Concorrente",
+        "value": "4"
       }]
     }
 
     this.dataSource4={
       "chart": {
-        "caption": "Web Servers Market Share",
-        "subCaption": "2015-16",
+       
          "plottooltext": "<div id='nameDiv'> <b>$label</b><br/><b>Market Share Percentage : </b>$percentValue<br/></div>",
         "showLegend": "1",   
         "legendPosition":"right",
@@ -69,24 +61,17 @@ export class EstrategicoComponent implements OnInit {
        "theme":"hulk-light",
       },
       "data": [{
-        "label": "Apache",
-        "value": "32647479"
+        "label": "Eu",
+        "value": "2"
       }, {
-        "label": "Microsoft",
-        "value": "22100932"
-      }, {
-        "label": "Zeus",
-        "value": "14376"
-      }, {
-        "label": "Other",
-        "value": "18674221"
+        "label": "Concorrente",
+        "value": "8"
       }]
     }
 
     this.dataSource2={
       "chart": {
-        "caption": "Social Media Platforms Popularity",
-        "subCaption": "2012-2016",
+       
         "theme": "hulk-light",
         "showhovereffect": "1",
         "xAxisName": "Years",
@@ -112,40 +97,40 @@ export class EstrategicoComponent implements OnInit {
         ]
       }],
       "dataset": [{
-        "seriesname": "Facebook",
+        "seriesname": "Boas",
         "anchorBgColor": "#876EA1",
         "data": [{
-            "value": "62"
+            "value": "14"
           }, {
-            "value": "64"
+            "value": "23"
           }, {
-            "value": "64"
+            "value": "17"
           }, {
-            "value": "66"
+            "value": "22"
           }, {
-            "value": "78"
+            "value": "18"
           }
 
         ]
       }, {
-        "seriesname": "Instagram",
+        "seriesname": "Ruins",
         "anchorBgColor": "#72D7B2",
         "data": [{
-          "value": "16"
+          "value": "4"
         }, {
-          "value": "18"
+          "value": "6"
         }, {
-          "value": "24"
+          "value": "3"
         }, {
-          "value": "26"
+          "value": "5"
         }, {
-          "value": "32"
+          "value": "5"
         }]
       }, {
-        "seriesname": "LinkedIn",
+        "seriesname": "Médias",
         "anchorBgColor": "#77BCE9",
         "data": [{
-          "value": "20"
+          "value": "30"
         }, {
           "value": "22"
         }, {
@@ -155,32 +140,15 @@ export class EstrategicoComponent implements OnInit {
         }, {
           "value": "29"
         }]
-      }, {
-        "seriesname": "Twitter",
-        "anchorBgColor": "#E5B556",
-        "data": [{
-          "value": "18"
-        }, {
-          "value": "19"
-        }, {
-          "value": "21"
-        }, {
-          "value": "21"
-        }, {
-          "value": "24"
-        }]
       }]
     }
 
 
     this.dataSource={
       "chart": {
-        "caption": "Top Global Oil Reserves",
-        "subCaption":"[2015-16]",
-        "xAxisName": "MMbbl= One Million barrels",
-        "yAxisName": "Reserves (MMbbl)",
+        "xAxisName": "Concorrentes",
+        "yAxisName": "Porcentagem de Boas Avaliações",
         // extra attributes  
-        "numberSuffix": "K",
         "showValues": "0",
         "paletteColors": "#81BB76", 
         "showHoverEffect": "1",
@@ -189,29 +157,20 @@ export class EstrategicoComponent implements OnInit {
         "theme": "hulk-light",
       },
       "data": [{
-        "label": "Venezuela",
-        "value": "290"
+        "label": "Concorrente 1",
+        "value": "8"
       }, {
-        "label": "Saudi",
-        "value": "260"
+        "label": "Concorrente 2",
+        "value": "7"
       }, {
-        "label": "Canada",
-        "value": "180"
+        "label": "Concorrente 3",
+        "value": "5"
       }, {
-        "label": "Iran",
-        "value": "140"
+        "label": "Concorrente 4",
+        "value": "3"
       }, {
-        "label": "Russia",
-        "value": "115"
-      }, {
-        "label": "UAE",
-        "value": "100"
-      }, {
-        "label": "US",
-        "value": "30"
-      }, {
-        "label": "China",
-        "value": "30"
+        "label": "Concorrente 5",
+        "value": "4"
       }]
     }
   }

@@ -26,30 +26,24 @@ export class OperacionalComponent implements OnInit {
 
     this.dataSource = {
       "chart": {
-          "caption": "Harry's SuperMart",
-          "subCaption": "Top 5 stores in last month by revenue",
-          "numberprefix": "$",
+          "numberprefix": "",
           "theme": "fint"
       },
       "data": [{
-              "label": "Bakersfield Central",
-              "value": "880000"
+              "label": "Girassol Plaza",
+              "value": "98"
           },
           {
-              "label": "Garden Groove harbour",
-              "value": "730000"
+              "label": "Céu",
+              "value": "72"
           },
           {
-              "label": "Los Angeles Topanga",
-              "value": "590000"
+              "label": "Italian",
+              "value": "59"
           },
           {
-              "label": "Compton-Rancho Dom",
-              "value": "520000"
-          },
-          {
-              "label": "Daly City Serramonte",
-              "value": "330000"
+              "label": "Ibis",
+              "value": "83"
           }
       ]
     }
