@@ -74,7 +74,7 @@ export class EstrategicoComponent implements OnInit {
        
         "theme": "hulk-light",
         "showhovereffect": "1",
-        "xAxisName": "Years",
+        "xAxisName": "Meses",
         "showValues": "0",
         "numbersuffix": "%",
         "drawCrossLine": "1",
@@ -83,15 +83,15 @@ export class EstrategicoComponent implements OnInit {
       },
       "categories": [{
         "category": [{
-            "label": "2012"
+            "label": "01"
           }, {
-            "label": "2013"
+            "label": "02"
           }, {
-            "label": "2014"
+            "label": "03"
           }, {
-            "label": "2015"
+            "label": "04"
           }, {
-            "label": "2016"
+            "label": "05"
           }
 
         ]
